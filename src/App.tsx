@@ -17,10 +17,13 @@ function App() {
   };
 
   const sendNotification = () => {
+    console.log("Send Notification");
     if (Notification.permission === 'granted') {
+      console.log("Send Notification granted");
       new Notification('Nouvelle tâche', {
         body: 'Vous avez ajouté une nouvelle tâche à la liste ! 🎉',
       });
+      console.log("Send Notification done");
     } else {
       alert('Les notifications ne sont pas activées ou ne sont pas encore demandées.');
     }
