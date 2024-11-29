@@ -36,6 +36,12 @@ function App() {
         >
           Activer les Notifications
         </button>
+        <button
+          onClick={sendNotification}
+          className="bg-green-500 text-white px-4 py-2 rounded"
+        >
+          Envoyer une Notification
+        </button>
         <ToDoList />
       </div>
     </>
