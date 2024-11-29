@@ -23,9 +23,10 @@ function App() {
         icon: '/icons/icon-192x192.png',
       });
     } else {
-      alert('Activez les notifications pour recevoir des alertes.');
+      alert('Les notifications ne sont pas activées ou ne sont pas encore demandées.');
     }
   };
+  
 
   return (
     <>
