@@ -20,7 +20,6 @@ function App() {
     if (Notification.permission === 'granted') {
       new Notification('Nouvelle tâche', {
         body: 'Vous avez ajouté une nouvelle tâche à la liste ! 🎉',
-        icon: '/icons/icon-192x192.png',
       });
     } else {
       alert('Les notifications ne sont pas activées ou ne sont pas encore demandées.');
